@@ -2,8 +2,8 @@
   'normalize',
   'fonts',
   'mixins',
-  'variables',
   'media',
+  'variables',
   'utils',
   'globals';
 
@@ -12,4 +12,6 @@
   './blocks/burger-button',
   './blocks/cross-button',
   './blocks/mobile-overlay',
-  './blocks/header';
+  './blocks/header',
+  './blocks/section',
+  './blocks/hero';
