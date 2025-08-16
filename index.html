@@ -17,6 +17,86 @@
   <title>Positivus</title>
 </head>
 <body>
+  <header class="header">
+    <div class="header__inner container">
+      <a
+        href="./index.html"
+        class="header__logo logo"
+      >
+        <img
+          class="logo__image"
+          src="./images/logo.svg"
+          alt="Positivus"
+          width="219"
+          height="36"
+          loading="lazy"
+        />
+      </a>
+      <nav class="header__menu hidden-mobile">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">About us</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Services</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Use Cases</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Pricing</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        href="#"
+        class="header__button button button--transparent hidden-mobile"
+        type="button"
+      >
+        Request a quote
+      </button>
+      <button
+        class="button__burger-menu burger-button visible-mobile"
+        type="button"
+        aria-label="Open navigation menu"
+        onclick="mobileOverlay.showModal()"
+      ></button>
+    </div>
+  </header>
 
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link">About us</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link">Services</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link">Use Cases</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link">Pricing</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="mobile-overlay__link">Blog</a>
+        </li>
+      </ul>
+    </div>
+    <form
+      class="mobile-overlay__close-button-wrapper"
+      method="dialog"
+    >
+      <button
+        class="mobile-overlay__close-button cross-button"
+        type="submit"
+        aria-label="Close navigation menu"
+      ></button>
+    </form>
+  </dialog>
 </body>
 </html>
