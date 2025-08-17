@@ -27,5 +27,9 @@
 
   &__description {
     max-width: 580px;
+
+    &--narrow {
+      max-width: 292px;
+    }
   }
 }
