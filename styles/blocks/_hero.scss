@@ -1,0 +1,97 @@
+.hero {
+  display: grid;
+  row-gap: var(--section-padding-y);
+
+  @include desktop {
+    row-gap: 60px;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    row-gap: 35px;
+    max-width: 531px;
+
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__title {
+    @include mobile {
+      margin-bottom: 10px;
+      order: 1;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.4;
+
+    @include mobile {
+      margin-bottom: 40px;
+      order: 3;
+    }
+  }
+
+  &__button {
+    justify-self: start;
+
+    @include mobile {
+      align-self: stretch;
+      width: 100%;
+      max-width: 390px;
+      margin-inline: auto;
+      order: 4;
+    }
+  }
+
+  &__image {
+    @include tablet {
+      max-width: 40%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      width: 100%;
+      max-width: 100%;
+      order: 2;
+    }
+  }
+
+  &__partners {
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 37px;
+
+      @include tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      &-item {
+        @include tablet {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    &-image {
+      filter: grayscale(1);
+    }
+  }
+}
