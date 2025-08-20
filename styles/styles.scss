@@ -8,6 +8,9 @@
   'globals';
 
 @import
+  './blocks/field',
+  './blocks/radios',
+  './blocks/radio',
   './blocks/button',
   './blocks/grid',
   './blocks/burger-button',
@@ -26,4 +29,5 @@
   './blocks/team',
   './blocks/pagination',
   './blocks/review-card',
-  './blocks/reviews';
+  './blocks/reviews',
+  './blocks/contact-us';
